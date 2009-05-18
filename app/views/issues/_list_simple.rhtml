@@ -5,6 +5,7 @@
 		<th>#</th>
 		<th><%=l(:field_tracker)%></th>
 		<th><%=l(:field_subject)%></th>
+		<th><%=l(:field_done_ratio)%></th>
 		</tr></thead>
 		<tbody>	
 		<% for issue in issues %>
@@ -18,6 +19,7 @@
 			<td class="subject">
                 <%= link_to h(issue.subject), :controller => 'issues', :action => 'show', :id => issue %>
             </td>
+      <td width="60px"><%= progress_bar issue.done_ratio, :width => '80px' %></td>
 		</tr>
 		<% end %>
 		</tbody>

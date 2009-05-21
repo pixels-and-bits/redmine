@@ -57,7 +57,7 @@ h4, .wiki h3 {font-size: 13px;padding: 2px 10px 1px 0px;margin-bottom: 5px; bord
 
 #content { width: 80%; background-color: #fff; margin: 0px; border-right: 1px solid #ddd; padding: 6px 10px 10px 10px; z-index: 10; }
 * html #content{ width: 80%; padding-left: 0; margin-top: 0px; padding: 6px 10px 10px 10px;}
-html>body #content { min-height: 600px; } 
+html>body #content { min-height: 600px; }
 * html body #content { height: 600px; } /* IE */
 
 #main.nosidebar #sidebar{ display: none; }
@@ -173,7 +173,7 @@ textarea.wiki-edit { width: 99%; }
 li p {margin-top: 0;}
 div.issue {background:#ffffdd; padding:6px; margin-bottom:6px;border: 1px solid #d7d7d7;}
 p.breadcrumb { font-size: 0.9em; margin: 4px 0 4px 0;}
-p.subtitle { font-size: 0.9em; margin: -6px 0 12px 0; font-style: italic; } 
+p.subtitle { font-size: 0.9em; margin: -6px 0 12px 0; font-style: italic; }
 p.footnote { font-size: 0.9em; margin-top: 0px; margin-bottom: 0px; }
 
 fieldset#filters, fieldset#date-range { padding: 0.7em; margin-bottom: 8px; }
@@ -202,7 +202,7 @@ div#activity dd span.description, #search-results dd span.description { display:
 div#search-results-counts {float:right;}
 div#search-results-counts ul { margin-top: 0.5em; }
 div#search-results-counts  li { list-style-type:none; float: left; margin-left: 1em; }
-  
+
 dt.issue { background-image: url(../images/ticket.png); }
 dt.issue-edit { background-image: url(../images/ticket_edit.png); }
 dt.issue-closed { background-image: url(../images/ticket_checked.png); }
@@ -261,7 +261,7 @@ font-weight: bold;
 float: left;
 text-align: right;
 margin-left: -180px; /*width of left column*/
-width: 175px; /*width of labels. Should be smaller than left column to create some right 
+width: 175px; /*width of labels. Should be smaller than left column to create some right
 margin*/
 }
 
@@ -566,7 +566,7 @@ background-image:url('../images/close_hl.png');
 }
 
 .task_late { background:#f66 url(../images/task_late.png); border: 1px solid #f66; }
-.task_done { background:#66f url(../images/task_done.png); border: 1px solid #66f; }  
+.task_done { background:#66f url(../images/task_done.png); border: 1px solid #66f; }
 .task_todo { background:#aaa url(../images/task_todo.png); border: 1px solid #aaa; }
 .milestone { background-image:url(../images/milestone.png); background-repeat: no-repeat; border: 0; }
 
@@ -634,7 +634,7 @@ vertical-align: middle;
 .icon22-settings { background-image: url(../images/22x22/settings.png); }
 .icon22-plugin { background-image: url(../images/22x22/plugin.png); }
 
-img.gravatar { 
+img.gravatar {
 	padding: 2px;
   border: solid 1px #d5d5d5;
   background: #fff;
@@ -677,6 +677,8 @@ td.username img.gravatar {
 
 h2 img { vertical-align:middle; }
 
+.left { text-align:left; }
+td.id { padding:5px 10px; }
 
 /***** Media print specific styles *****/
 @media print {

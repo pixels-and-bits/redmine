@@ -3,8 +3,8 @@
 	<table class="list issues">		
 		<thead><tr>
 		<th>#</th>
-		<th><%=l(:field_tracker)%></th>
-		<th><%=l(:field_subject)%></th>
+		<th class="left"><%=l(:field_tracker)%></th>
+		<th class="left"><%=l(:field_subject)%></th>
 		<th><%=l(:field_done_ratio)%></th>
 		</tr></thead>
 		<tbody>	
@@ -14,9 +14,9 @@
 			    <%= check_box_tag("ids[]", issue.id, false, :style => 'display:none;') %>
 				<%= link_to issue.id, :controller => 'issues', :action => 'show', :id => issue %>
 			</td>
-			<td><%=h issue.project.name %> - <%= issue.tracker.name %><br />
+			<td class="left"><%=h issue.project.name %> - <%= issue.tracker.name %><br />
                 <%= issue.status.name %> - <%= format_time(issue.updated_on) %></td>
-			<td class="subject">
+			<td class="subject left">
                 <%= link_to h(issue.subject), :controller => 'issues', :action => 'show', :id => issue %>
             </td>
       <td width="60px"><%= progress_bar issue.done_ratio, :width => '80px' %></td>

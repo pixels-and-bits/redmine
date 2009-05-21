@@ -678,7 +678,7 @@ td.username img.gravatar {
 h2 img { vertical-align:middle; }
 
 .left { text-align:left; }
-td.id { padding:5px 10px; }
+table.list td.id { padding:5px 10px; }
 
 /***** Media print specific styles *****/
 @media print {

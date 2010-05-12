@@ -4,8 +4,10 @@
 		<thead><tr>
 		<th>#</th>
 		<th><%=l(:field_project)%></th>
+		<th><%=l(:field_category)%></th>
 		<th><%=l(:field_tracker)%></th>
 		<th><%=l(:field_subject)%></th>
+		<th><%=l(:field_done_ratio)%></th>
 		</tr></thead>
 		<tbody>	
 		<% for issue in issues %>
@@ -15,10 +17,12 @@
 				<%= link_to issue.id, :controller => 'issues', :action => 'show', :id => issue %>
 			</td>
 			<td class="project"><%= link_to(h(issue.project), :controller => 'projects', :action => 'show', :id => issue.project) %></td>
+			<td class="category"><%=h issue.category %></td>
 			<td class="tracker"><%=h issue.tracker %></td>
 			<td class="subject">
         <%= link_to h(truncate(issue.subject, :length => 60)), :controller => 'issues', :action => 'show', :id => issue %> (<%=h issue.status %>)
       </td>
+			<td class="done_ratio"><%= progress_bar issue.done_ratio, :width => '80px', :legend => "#{issue.done_ratio}%" %></td>
 		</tr>
 		<% end %>
 		</tbody>

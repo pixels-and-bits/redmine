@@ -238,10 +238,12 @@
   notice_feeds_access_key_reseted: 您的 RSS 存取金鑰已被重新設定。
   notice_api_access_key_reseted: 您的 API 存取金鑰已被重新設定。
   notice_failed_to_save_issues: " {{count}} 個項目儲存失敗（總共選取 {{total}} 個項目）： {{ids}} 。"
+  notice_failed_to_save_members: "成員儲存失敗: {{errors}}."
   notice_no_issue_selected: "未選擇任何項目！請勾選您想要編輯的項目。"
   notice_account_pending: "您的帳號已經建立，正在等待管理員的審核。"
   notice_default_data_loaded: 預設組態已載入成功。
   notice_unable_delete_version: 無法刪除版本。
+  notice_unable_delete_time_entry: 無法刪除工時記錄項目。
   notice_issue_done_ratios_updated: 項目完成百分比已更新。
 
   error_can_t_load_default_data: "無法載入預設組態： {{value}}"
@@ -316,6 +318,7 @@
   field_priority: 優先權
   field_fixed_version: 版本
   field_user: 用戶
+  field_principal: 原則
   field_role: 角色
   field_homepage: 網站首頁
   field_is_public: 公開
@@ -549,6 +552,7 @@
   label_my_page: 帳戶首頁
   label_my_account: 我的帳戶
   label_my_projects: 我的專案
+  label_my_page_block: 帳戶首頁區塊
   label_administration: 網站管理
   label_login: 登入
   label_logout: 登出
@@ -598,7 +602,6 @@
   label_news_latest: 最近新聞
   label_news_view_all: 檢視全部的新聞
   label_news_added: 新聞已新增
-  label_change_log: 變更記錄
   label_settings: 設定
   label_overview: 概觀
   label_version: 版本
@@ -727,6 +730,7 @@
   label_changes_details: 所有變更的明細
   label_issue_tracking: 項目追蹤
   label_spent_time: 耗用工時
+  label_overall_spent_time: 整體耗用工時
   label_f_hour: "{{value}} 小時"
   label_f_hour_plural: "{{value}} 小時"
   label_time_tracking: 工時追蹤
@@ -960,9 +964,11 @@
   text_wiki_page_destroy_children: "刪除所有子頁面及其延伸頁面"
   text_wiki_page_reassign_children: "重新指定所有的子頁面之父頁面至此頁面"
   text_own_membership_delete_confirmation: "您在專案中，所擁有的部分或全部權限即將被移除，在這之後可能無法再次編輯此專案。\n您確定要繼續執行這個動作？"
+  text_zoom_in: 放大
+  text_zoom_out: 縮小
   
   default_role_manager: 管理人員
-  default_role_developper: 開發人員
+  default_role_developer: 開發人員
   default_role_reporter: 報告人員
   default_tracker_bug: 臭蟲
   default_tracker_feature: 功能
